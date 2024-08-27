@@ -50,11 +50,13 @@ const SalonDetails = async ({ params }) => {
                     <div className="sm:px-[100px] px-[10px] my-[20px]">
                         <h1 className="font-medium sm:my-[20px] text-[20px]">{salon.name} Branches</h1>
                         <div className="flex sm:flex-row flex-col flex-wrap gap-[30px]">
-                            {
+                         {
                                 salon.salons.map((ele) => {
-                                    return <div key={ele.id} className="border sm:w-[30%]  text-[14px] border-[#B9B9B9] rounded px-[30px] py-[8px]  shadow-sm flex gap-[20px] items-center">
-                                        <Image src="/img/pin.svg" alt='img' height={20} width={20} /><p className="py-[10px] ">{ele.salon_location}</p>  <span className='sm:hidden ml-auto'> <Link href="https://salons.luzo.app/igVKahpDgZHGNP3y9"><ChevronRight /></Link></span>
+                                    return <Link href="https://salons.luzo.app/igVKahpDgZHGNP3y9">
+                                     <div key={ele.id} className="border sm:w-[30%]  text-[14px] border-[#B9B9B9] rounded px-[30px] py-[8px]  shadow-sm flex gap-[20px] items-center">
+                                        <Image src="/img/pin.svg" alt='img' height={20} width={20} /><p className="py-[10px] ">{ele.salon_location}</p>  <span className='sm:hidden ml-auto'> <ChevronRight /></span>
                                     </div>
+                                    </Link>
                                 })
                             }
                         </div>
