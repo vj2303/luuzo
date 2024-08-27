@@ -54,7 +54,7 @@ const SalonDetails = async ({ params }) => {
                                 salon.salons.map((ele) => {
                                    return (
                                         <a
-                                            href="https://salons.luzo.app/igVKahpDgZHGNP3y9"
+                                            href={ele.salon_share_link}
                                             key={ele.id}
                                             target="_blank"
                                             rel="noopener noreferrer"
