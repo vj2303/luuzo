@@ -105,7 +105,7 @@ const AdvertisementPopup = () => {
             <Image src={"/1.png"} alt='discount' width={400} height={500} className='sm:h-full w-full h-[500px] mx-auto' />
             <X className='bg-gray-400 rounded-full p-[2px] text-white cursor-pointer absolute top-2 right-2' size={28} onClick={() => handleCloseModal(true, false)} />
             
-            <Link target="_blank" href='https://play.google.com/store/apps/details?id=com.salon_surf&pli=1' className='popup_btn_gradient text-white sm:px-4 px-2 sm:py-[10px] py-1 rounded flex justify-center outline-none absolute bottom-[3%] left-[calc(50% - 150px )]'>
+            <Link target="_blank" href={"/loading"} className='popup_btn_gradient text-white sm:px-4 px-2 sm:py-[10px] py-1 rounded flex justify-center outline-none absolute bottom-[3%] left-[calc(50% - 150px )]'>
                     {/* <button className='popup_btn_gradient text-white sm:px-4 px-2 sm:py-[10px] py-1 rounded flex justify-center outline-none absolute bottom-6 left-1/2 transform -translate-x-1/2'> */}
                         Download LUZO
                     {/* </button>  */}
